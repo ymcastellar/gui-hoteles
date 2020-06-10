@@ -1,0 +1,16 @@
+{
+  "name": "first-repo",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto e nodejs\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dn\u001b[C\u001b[F\u001b[B\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D b\u001b[C\u001b[D\u001b[Dnodejs\u001b[2~",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ymcastellar@bitbucket.org/Yoy931001/first-repo.git"
+  },
+  "author": "Yoyman Castellar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Yoy931001/first-repo#readme"
+}
