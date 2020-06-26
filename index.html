@@ -45,15 +45,27 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <h1>¿Que puedo encontrar?</h1>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#encontrar" aria-expanded="false" aria-controls="multiCollpase1">¿Que puedo encontrar?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#hacer" aria-expanded="false" aria-controls="multiCollpase2">¿Que debo hacer?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollpase3">¿Medios de pago?</button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="encontrar">
+                <h3>¿Que puedo encontrar?</h3>
                 <p>Encontrarás una lista de hoteles para hacer ms facíl elegir tu hotel favorito.</p>
             </div>
-            <div class="col-sm-4">
-                <h1>¿Que debo hacer?</h1>
+            <div class="col-sm-4 collapse multi-collapse" id="hacer">
+                <h3>¿Que debo hacer?</h3>
                 <p>Revisa la lista de hoteles, haz click en "mas info" para obtener informacón detallada del hotel.</p>
             </div>
-            <div class="col-sm-4">
-                <h1>¿Medios de pago?</h1>
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
+                <h3>¿Medios de pago?</h3>
                 <p>Tarjeta de crédito o debito.</p>
             </div>
         </div>
