@@ -53,7 +53,6 @@
             <div class="col-sm-4">
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollpase3">¿Medios de pago?</button>
             </div>
-
         </div>
         <div class="row">
             <div class="col-sm-4 collapse multi-collapse" id="encontrar">
@@ -79,7 +78,10 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/holidayinn.jpg"> 
                     <p class="card-text">El Holiday Inn Express Barranquilla Buenavista tiene piscina al aire libre y centro de fitness y ocupa un edificio de nueva construcción del distrito de Riomar, en Barranquilla, a 1 km del centro comercial Buenavista.</p>
-                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button"> <span class="oi oi-info footer-icon"></span>Más informacón</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button" style="margin-top: 50px;"> <span class="oi oi-info footer-icon"></span>Más información</a>
                 </div>
             </div>
             <div class="card card-hotel d-flex felx-column justify-content-between">
@@ -88,7 +90,10 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/ghl.jpg"> 
                     <p>El GHL Collection Hotel Barranquilla se encuentra en Barranquilla y ofrece WiFi gratuita en todas las instalaciones. El hotel cuenta con restaurante y solárium con vistas a la ciudad. Hay aparcamiento privado gratuito.</p>
-                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button" style="margin-top: 37px;"> <span class="oi oi-info footer-icon"></span>Más informacón</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button" style="margin-top: 50px;"> <span class="oi oi-info footer-icon"></span>Más información</a>
                 </div>
             </div>    
             <div class="card card-hotel d-flex felx-column justify-content-between">
@@ -97,7 +102,38 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/washington.jpg"> 
                     <p>El Washington Plaza Hotel cuenta con restaurante y se encuentra a 2 km del estadio Romelio Martínez y a 5 km del río Magdalena. Hay conexión Wi-Fi gratuita en todas las instalaciones.</p>
-                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button" style="margin-top: 50px;"> <span class="oi oi-info footer-icon"></span>Más informacón</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                </div>
+                <div>
+                    <a class="btn btn-primary btn-lg btn-info" href="#" role="button" style="margin-top: 50px;"> <span class="oi oi-info footer-icon"></span>Más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-tittle" id="exampleModalLabel"> Contacto con el hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label form="recipient-name" class="col-form-label"> Tu email: </label>
+                            <input type="text" class="form-control" id="recipient-name"> 
+                        </div>
+                        <div class="form-group">
+                            <label form="message-text" class="col-form-label"> Mensaje: </label>
+                            <input type="text" class="form-control" id="message-text"> 
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
                 </div>
             </div>
         </div>
