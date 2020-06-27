@@ -86,7 +86,7 @@
             </div>
             <div class="card card-hotel d-flex felx-column justify-content-between">
                 <div class="card-body">
-                    <h5 class="card-tittle">GHL Collection Barranquilla Hotel</h5>
+                    <h5 class="card-tittle" data-toggle="tooltip" data-placement="top" title="Cupos limitados!">GHL Collection Barranquilla Hotel</h5>
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/ghl.jpg"> 
                     <p>El GHL Collection Hotel Barranquilla se encuentra en Barranquilla y ofrece WiFi gratuita en todas las instalaciones. El hotel cuenta con restaurante y solárium con vistas a la ciudad. Hay aparcamiento privado gratuito.</p>
@@ -168,5 +168,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
   </body>
 </html>
