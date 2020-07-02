@@ -102,7 +102,7 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/holidayinn.jpg"> 
                     <p class="card-text">El Holiday Inn Express Barranquilla Buenavista tiene piscina al aire libre y centro de fitness y ocupa un edificio de nueva construcción del distrito de Riomar, en Barranquilla, a 1 km del centro comercial Buenavista.</p>
-                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto1" id="contactoBtn1" role="button">Contacto</a>
                 </div>
                 <div>
                     <button type="button" class="btn btn-primary btn-lg btn-infomacion" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes" data-placement="bottom"> <span class="oi oi-info footer-icon"></span>Más información</button>
@@ -114,7 +114,7 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/ghl.jpg"> 
                     <p>El GHL Collection Hotel Barranquilla se encuentra en Barranquilla y ofrece WiFi gratuita en todas las instalaciones. El hotel cuenta con restaurante y solárium con vistas a la ciudad. Hay aparcamiento privado gratuito.</p>
-                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto2" id="contactoBtn2" role="button">Contacto</a>
                 </div>
                 <div>
                     <button type="button" class="btn btn-primary btn-lg btn-infomacion" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes" data-placement="bottom"> <span class="oi oi-info footer-icon"></span>Más información</button>
@@ -126,7 +126,7 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/washington.jpg"> 
                     <p>El Washington Plaza Hotel cuenta con restaurante y se encuentra a 2 km del estadio Romelio Martínez y a 5 km del río Magdalena. Hay conexión Wi-Fi gratuita en todas las instalaciones.</p>
-                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn" role="button">Contacto</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto3" id="contactoBtn3" role="button">Contacto</a>
                 </div>
                 <div>
                     <button type="button" class="btn btn-primary btn-lg btn-infomacion" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes" data-placement="bottom"> <span class="oi oi-info footer-icon"></span>Más información</button>
@@ -140,7 +140,66 @@
         
     </div>
     
-    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--  ********* MODAL #1 ********* -->
+    <div class="modal fade" id="contacto1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-tittle" id="exampleModalLabel"> Contacto con el hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label form="recipient-name" class="col-form-label"> Tu email: </label>
+                            <input type="text" class="form-control" id="recipient-name"> 
+                        </div>
+                        <div class="form-group">
+                            <label form="message-text" class="col-form-label"> Mensaje: </label>
+                            <input type="text" class="form-control" id="message-text"> 
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--  ********* MODAL #2 ********* -->
+    <div class="modal fade" id="contacto2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-tittle" id="exampleModalLabel"> Contacto con el hotel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label form="recipient-name" class="col-form-label"> Tu email: </label>
+                            <input type="text" class="form-control" id="recipient-name"> 
+                        </div>
+                        <div class="form-group">
+                            <label form="message-text" class="col-form-label"> Mensaje: </label>
+                            <input type="text" class="form-control" id="message-text"> 
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  ********* MODAL #3 ********* -->
+    <div class="modal fade" id="contacto3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -206,24 +265,73 @@
                 interval: 2000
             });
 
-            $('#contacto').on('show.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta mostrando');
+            // ********* MODAL #1 *********
+            $('#contacto1').on('show.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta mostrando modal 1');
 
-                $('#contactoBtn').removeClass('btn-outline-success');
-                $('#contactoBtn').addClass('btn-primary');
-                $('#contactoBtn').prop('disabled', true);
+                $('#contactoBtn1').removeClass('btn-outline-success');
+                $('#contactoBtn1').addClass('btn-primary');
             });
 
-            $('#contacto').on('show.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se mostró');
+            $('#contacto1').on('show.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se mostró modal 1');
             });
 
-            $('#contacto').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta ocultando');
+            $('#contacto1').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta ocultando modal 1');
+
+                $('#contactoBtn1').removeClass('btn-primary');
+                $('#contactoBtn1').addClass('btn-outline-success');
             });
 
-            $('#contacto').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se ocultó');
+            $('#contacto1').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se ocultó modal 1');
+            });
+
+            // ********* MODAL #2 *********
+            $('#contacto2').on('show.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta mostrando modal 2');
+
+                $('#contactoBtn2').removeClass('btn-outline-success');
+                $('#contactoBtn2').addClass('btn-primary');
+            });
+
+            $('#contacto2').on('show.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se mostró modal 2');
+            });
+
+            $('#contacto2').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta ocultando modal 2');
+
+                $('#contactoBtn2').removeClass('btn-primary');
+                $('#contactoBtn2').addClass('btn-outline-success');
+            });
+
+            $('#contacto2').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se ocultó modal 2');
+            });
+
+            // ********* MODAL #3 *********
+            $('#contacto3').on('show.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta mostrando modal 3');
+
+                $('#contactoBtn3').removeClass('btn-outline-success');
+                $('#contactoBtn3').addClass('btn-primary');
+            });
+
+            $('#contacto3').on('show.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se mostró modal 3');
+            });
+
+            $('#contacto3').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta ocultando modal 3');
+
+                $('#contactoBtn3').removeClass('btn-primary');
+                $('#contactoBtn3').addClass('btn-outline-success');
+            });
+
+            $('#contacto3').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se ocultó modal 3');
             });
         });
     </script>
