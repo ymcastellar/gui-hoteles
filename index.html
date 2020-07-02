@@ -126,7 +126,7 @@
                     <h6 class="card-subtittle">Colombia</h6>
                     <img class="card-img-top imgstyle" src="img/washington.jpg"> 
                     <p>El Washington Plaza Hotel cuenta con restaurante y se encuentra a 2 km del estadio Romelio Martínez y a 5 km del río Magdalena. Hay conexión Wi-Fi gratuita en todas las instalaciones.</p>
-                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" role="button">Contacto</a>
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn" role="button">Contacto</a>
                 </div>
                 <div>
                     <button type="button" class="btn btn-primary btn-lg btn-infomacion" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes" data-placement="bottom"> <span class="oi oi-info footer-icon"></span>Más información</button>
@@ -204,6 +204,26 @@
             $('[data-toggle="popover"]').popover();
             $('.carousel').carousel({
                 interval: 2000
+            });
+
+            $('#contacto').on('show.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta mostrando');
+
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+            });
+
+            $('#contacto').on('show.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se mostró');
+            });
+
+            $('#contacto').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
+                console.log('se esta ocultando');
+            });
+
+            $('#contacto').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
+                console.log('se ocultó');
             });
         });
     </script>
