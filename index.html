@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- css file -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- icons css file -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
@@ -104,7 +104,7 @@
                     <p class="card-text">El Holiday Inn Express Barranquilla Buenavista tiene piscina al aire libre y centro de fitness y ocupa un edificio de nueva construcción del distrito de Riomar, en Barranquilla, a 1 km del centro comercial Buenavista.</p>
                 </div>
                 <div>
-                    <a class="btn btn-outline-success" style="margin-left: 20px;" data-toggle="modal" data-target="#contacto1" id="contactoBtn1" role="button">Contacto</a>
+                    <a class="btn btn-outline-success btn-contacto"  data-toggle="modal" data-target="#contacto1" id="contactoBtn1" role="button">Contacto</a>
                 </div>
                 <br>
                 <div>
@@ -119,7 +119,7 @@
                     <p>El GHL Collection Hotel Barranquilla se encuentra en Barranquilla y ofrece WiFi gratuita en todas las instalaciones. El hotel cuenta con restaurante y solárium con vistas a la ciudad. Hay aparcamiento privado gratuito.</p>   
                 </div>
                 <div>
-                    <a class="btn btn-outline-success" style="margin-left: 20px;" data-toggle="modal" data-target="#contacto2" id="contactoBtn2" role="button">Contacto</a>
+                    <a class="btn btn-outline-success btn-contacto" data-toggle="modal" data-target="#contacto2" id="contactoBtn2" role="button">Contacto</a>
                 </div> 
                 <br>
                 <div>
@@ -134,7 +134,7 @@
                     <p>El Washington Plaza Hotel cuenta con restaurante y se encuentra a 2 km del estadio Romelio Martínez y a 5 km del río Magdalena. Hay conexión Wi-Fi gratuita en todas las instalaciones.</p>
                 </div>
                 <div>
-                    <a class="btn btn-outline-success" style="margin-left: 20px;" data-toggle="modal" data-target="#contacto3" id="contactoBtn3" role="button">Contacto</a>
+                    <a class="btn btn-outline-success btn-contacto"  data-toggle="modal" data-target="#contacto3" id="contactoBtn3" role="button">Contacto</a>
                 </div>
                 <br>
                 <div>
@@ -241,9 +241,18 @@
     <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column"> 
-                <a href="http://www.facebook.com"><span class="iconify footer-icon" data-icon="cib:facebook" data-inline="false"></span>Facebook</a>
-                <a href="http://www.twitter.com"><span class="iconify footer-icon" data-icon="cib:twitter" data-inline="false"></span>Twitter</a>
-                <a href="http://www.instagram.com"><span class="iconify footer-icon" data-icon="brandico:instagram-filled" data-inline="false"></span>Instagram</a>
+                <div>
+                    <span class="iconify footer-icon" data-icon="cib:facebook" data-inline="false"></span> <a href="http://www.facebook.com" style="color: black;">Facebook</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="cib:twitter" data-inline="false"></span> <a href="http://www.twitter.com" style="color: black;">Twitter</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="brandico:instagram-filled" data-inline="false"></span> <a href="http://www.instagram.com" style="color: black;">Instagram</a>
+                </div>
+                
+
+                
             </div>
             <div class="col-sm-4 "> 
                 <address>
@@ -253,9 +262,15 @@
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end"> 
-                <a href="http://www.facebook.com"> <span class="iconify footer-icon" data-icon="bi:info-square-fill" data-inline="false"></span>Nosotros</a>
-                <a href="http://www.twitter.com"> <span class="iconify footer-icon" data-icon="si-glyph:tag-price" data-inline="false"></span> Precios</a>
-                <a href="https://www.instagram.com"> <span class="iconify footer-icon" data-icon="ic:round-contact-phone" data-inline="false"></span> Contacto</a>
+                <div>
+                    <span class="iconify footer-icon" data-icon="bi:info-square-fill" data-inline="false"></span> <a href="http://www.facebook.com" style="color: black;">Nosotros</a>
+                </div>
+                <div style="margin-right: 13px;">
+                    <span class="iconify footer-icon" data-icon="si-glyph:tag-price" data-inline="false"></span> <a href="http://www.twitter.com" style="color: black;"> Precios</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="ic:round-contact-phone" data-inline="false"></span> <a href="https://www.instagram.com" style="color: black;">Contacto</a>
+                </div>        
             </div>
         </div>
     </footer>

@@ -1,0 +1,41 @@
+$red: #b64141;
+$yellow: #acb500;
+$green: #00a123;
+
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-left: $bottom;
+}
+
+.jumbotron {
+    background-color:$red;
+}
+
+footer {
+    padding: 10px 10px 0 10px;
+    background-color: $green;
+    @include margenes(10px, 0px);
+}
+
+.footer-icon {
+    margin-right: 10px;
+}
+
+.card-hotel {
+    flex: 1 200px;
+    padding: 2px 5px 2px 5px;
+    @include margenes(10px, 0px);
+}
+
+.btn-infomacion {
+    width: 100%;
+    background-color:$yellow;
+}
+
+.imgstyle {
+    margin: 10px 0px 15px 0px
+}
+
+.btn-contacto {
+    margin-left: 20px;
+}
