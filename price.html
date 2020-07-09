@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- build:css dist/price.css -->
+    <!-- build:css css/price.css -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- css file -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <!-- endbuild -->
 
     <title>Guia Hoteles</title>
@@ -185,31 +184,44 @@
     <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column"> 
-                <a href="http://www.facebook.com">Facebook</a>
-                <a href="http://www.twitter.com">Twitter</a>
-                <a href="http://www.instagram.com">Instagram</a>
+                <div>
+                    <span class="iconify footer-icon" data-icon="cib:facebook" data-inline="false"></span> <a href="http://www.facebook.com" style="color: black;">Facebook</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="cib:twitter" data-inline="false"></span> <a href="http://www.twitter.com" style="color: black;">Twitter</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="brandico:instagram-filled" data-inline="false"></span> <a href="http://www.instagram.com" style="color: black;">Instagram</a>
+                </div>      
             </div>
             <div class="col-sm-4 "> 
                 <address>
-                    Barranquilla, Atlantico, Colombia
-                    +57 123465789
-                    contacto@guiahoteles.com
+                    <p><span class="oi oi-home footer-icon" ></span>Barranquilla, Atlantico, Colombia</p>
+                    <p><span class="oi oi-phone footer-icon"></span>+57 1523465789</p>
+                    <p><span class="oi oi-inbox footer-icon"></span>@guiahoteles.com</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end"> 
-                <a href="http://www.facebook.com">Nosotros</a>
-                <a href="http://www.twitter.com">Precios</a>
-                <a href="https://www.instagram.com">Contacto</a>
+                <div>
+                    <span class="iconify footer-icon" data-icon="bi:info-square-fill" data-inline="false"></span> <a href="http://www.facebook.com" style="color: black;">Nosotros</a>
+                </div>
+                <div style="margin-right: 13px;">
+                    <span class="iconify footer-icon" data-icon="si-glyph:tag-price" data-inline="false"></span> <a href="http://www.twitter.com" style="color: black;"> Precios</a>
+                </div>
+                <div>
+                    <span class="iconify footer-icon" data-icon="ic:round-contact-phone" data-inline="false"></span> <a href="https://www.instagram.com" style="color: black;">Contacto</a>
+                </div>   
             </div>
         </div>
     </footer>
 
-    <!-- build:css dist/price.js -->
+    <!-- build:js js/price.js -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <!-- endbuild -->
   </body>
 </html>

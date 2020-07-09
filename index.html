@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- css file con sass -->
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/styles2.css"> -->
     <!-- icons css file -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
-    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <!-- endbuild -->
     <title>Guia Hoteles</title>
   </head>
@@ -252,10 +251,7 @@
                 </div>
                 <div>
                     <span class="iconify footer-icon" data-icon="brandico:instagram-filled" data-inline="false"></span> <a href="http://www.instagram.com" style="color: black;">Instagram</a>
-                </div>
-                
-
-                
+                </div>                
             </div>
             <div class="col-sm-4 "> 
                 <address>
@@ -278,91 +274,14 @@
         </div>
     </footer>
 
-    <!-- build:css dist/index.js -->
+    <!-- build:js js/index.js -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function(){
-            $("[data-toggle='tooltip']").tooltip();
-            $('[data-toggle="popover"]').popover();
-            $('.carousel').carousel({
-                interval: 2000
-            });
-
-            // ********* MODAL #1 *********
-            $('#contacto1').on('show.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta mostrando modal 1');
-
-                $('#contactoBtn1').removeClass('btn-outline-success');
-                $('#contactoBtn1').addClass('btn-primary');
-            });
-
-            $('#contacto1').on('show.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se mostró modal 1');
-            });
-
-            $('#contacto1').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta ocultando modal 1');
-
-                $('#contactoBtn1').removeClass('btn-primary');
-                $('#contactoBtn1').addClass('btn-outline-success');
-            });
-
-            $('#contacto1').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se ocultó modal 1');
-            });
-
-            // ********* MODAL #2 *********
-            $('#contacto2').on('show.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta mostrando modal 2');
-
-                $('#contactoBtn2').removeClass('btn-outline-success');
-                $('#contactoBtn2').addClass('btn-primary');
-            });
-
-            $('#contacto2').on('show.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se mostró modal 2');
-            });
-
-            $('#contacto2').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta ocultando modal 2');
-
-                $('#contactoBtn2').removeClass('btn-primary');
-                $('#contactoBtn2').addClass('btn-outline-success');
-            });
-
-            $('#contacto2').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se ocultó modal 2');
-            });
-
-            // ********* MODAL #3 *********
-            $('#contacto3').on('show.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta mostrando modal 3');
-
-                $('#contactoBtn3').removeClass('btn-outline-success');
-                $('#contactoBtn3').addClass('btn-primary');
-            });
-
-            $('#contacto3').on('show.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se mostró modal 3');
-            });
-
-            $('#contacto3').on('hide.bs.modal', function (e){ //fires immediately when the instance is called
-                console.log('se esta ocultando modal 3');
-
-                $('#contactoBtn3').removeClass('btn-primary');
-                $('#contactoBtn3').addClass('btn-outline-success');
-            });
-
-            $('#contacto3').on('hidden.bs.modal', function (e){ //fires when the modal has been made visible
-                console.log('se ocultó modal 3');
-            });
-        });
-    </script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
   </body>
 </html>
